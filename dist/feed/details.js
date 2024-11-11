@@ -17,7 +17,6 @@ async function getPostById() {
             }
         });
         const responseData = await response.json();
-        console.log(responseData);
         document.title = responseData.data.title + " - Social Media App";
         listDetailedPost(responseData, outElement);
     } catch(error) {

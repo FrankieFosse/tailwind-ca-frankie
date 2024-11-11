@@ -117,11 +117,9 @@ async function getFollowers() {
             }
         });
         const responseData = await response.json();
-        console.log(responseData.data.followers);
         for (let item of responseData.data.followers) {
             followerscollection.push(item.name);
         }
-        console.log(followerscollection);
         listFollower(followerscollection, followersList);
     } catch(error) {
         console.error(error);

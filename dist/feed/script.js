@@ -16,7 +16,6 @@ async function fetchPosts() {
             throw new Error("Could not fetch data");
         };
         const responseData = await response.json();
-        console.log(responseData.data);
 
         for (let item of responseData.data) {
             collection.push(item);
