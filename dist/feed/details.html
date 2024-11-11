@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>Home - Social Media App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/d753c6feaf.js" crossorigin="anonymous"></script>
+    <script type="module" src="details.js"></script>
+    <script type="module" src="../../js/menu.js"></script>
+    <script type="module" src="../../js/logout.js"></script>
+    <script type="module" src="../../js/profile.js"></script>
+    <script type="module" src="../../js/loading.js"></script>
+</head>
+<body class="bg-gray-900 h-screen flex flex-col font-body text-base">
+
+    <video autoplay muted loop id="myVideo" class="fixed h-screen w-screen object-cover brightness-0 grayscale">
+        <source src="../../images/backdrop.mp4" type="video/mp4">
+    </video>
+    
+    <header class="z-10 bg-blue-800 saturate-50 bg-opacity-75 backdrop-filter backdrop-blur-sm h-16 flex flex-row justify-around items-center fixed w-screen">
+        <a href="/dist/feed/index.html"><li class="text-gray-400 list-none py-2 px-4 hover:bg-gray-900 hover:bg-opacity-10 hover:text-gray-100 hover:scale-105 duration-150"><i class="fa-solid fa-house"></i> Home</li></a>
+        <li id="profileLink" class="text-gray-400 list-none py-2 px-4 hover:bg-gray-900 hover:bg-opacity-10 hover:text-gray-100 hover:scale-105 duration-150 cursor-pointer hidden md:block"><div><i class="fa-solid fa-user w-5"></i> Profile</div></li>
+        <li id="logout" class="text-gray-400 list-none py-2 px-4 hover:bg-gray-900 hover:bg-opacity-10 hover:text-gray-100 hover:scale-105 duration-150 cursor-pointer hidden md:block"><div><i class="fa-solid fa-right-from-bracket w-5"></i> Log out</div></li>
+        <li class="text-gray-400 list-none py-2 px-4 hover:bg-gray-900 hover:bg-opacity-10 hover:text-gray-100 hover:scale-105 duration-150 cursor-pointer md:hidden" id="hamburger"><i class="fa-solid fa-bars"></i> Menu</li>
+        <li class="text-gray-400 list-none py-2 pr-4 pl-5 hover:bg-gray-900 hover:bg-opacity-10 hover:text-gray-100 hover:scale-105 duration-150 cursor-pointer hidden" id="close"><i class="fa-solid fa-x"></i> Close</li>
+        
+
+        <div id="hamburgerMenu" class="z-10 absolute top-16 right-0 duration-300 bg-blue-600 saturate-50 w-3/5 text-left hidden">
+            <a href="/dist/feed/index.html"><li class="text-gray-100 hover:bg-blue-700 duration-150 list-none px-5 py-2 flex flex-row justify-between"><div><i class="fa-solid fa-house w-5"></i> Home</div><div><i class="fa-solid fa-caret-right"></i></div></li></a>
+            <li id="profileLink" class="text-gray-100 cursor-pointer hover:bg-blue-700 duration-150 list-none px-5 py-2 flex flex-row justify-between"><div><i class="fa-solid fa-user w-5"></i> Profile</div><div><i class="fa-solid fa-caret-right"></i></div></li>
+            <li id="logout" class="text-gray-100 cursor-pointer hover:bg-blue-700 duration-150 list-none px-5 py-2 flex flex-row justify-between"><div><i class="fa-solid fa-right-from-bracket w-5"></i> Log out</div><div><i class="fa-solid fa-caret-right"></i></div></li>
+        </div>
+
+    </header>
+
+    <section id="backdrop" class="bg-gray-900 bg-opacity-75 backdrop-filter backdrop-blur-sm h-full w-full">
+
+    <div class="mt-16 flex flex-col justify-center items-center text-center overflow-hidden" id="detailedPost"></div>
+
+    </section>
+        
+</body>
+</html>
