@@ -863,6 +863,10 @@ video {
   row-gap: 1.25rem;
 }
 
+.self-center{
+  align-self: center;
+}
+
 .justify-self-center{
   justify-self: center;
 }
