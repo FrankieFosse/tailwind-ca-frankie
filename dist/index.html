@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Social Media App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d753c6feaf.js" crossorigin="anonymous"></script>
+    <script type="module" src="../js/login.js"></script>
+    <script type="module" src="../../js/loading.js"></script>
+</head>
+<body class="bg-gray-900 h-screen flex flex-col bg-no-repeat bg-cover">
+
+    <video autoplay muted loop id="myVideo" class="fixed h-screen w-screen object-cover opacity-0">
+        <source src="../../images/backdrop.mp4" type="video/mp4">
+    </video>
+
+    <section id="backdrop" class="bg-gray-900 bg-opacity-75 backdrop-filter backdrop-blur-sm">
+
+    <section id="loader" class="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-90 backdrop-filter backdrop-blur-lg z-10 duration-1000">
+        <div class="fixed content-none z-30 w-20 h-20 border-solid border-gray-100 border-8 border-t-green-600 rounded-full animate-spin"></div>
+        </section>
+
+
+    <main class="flex flex-col justify-center items-center h-screen text-center">
+        <div class="bg-gray-800 h-128 w-4/5 lg:w-2/5 flex flex-col justify-center items-center border-solid border-gray-700 border-4">
+            <h1 class="text-gray-100 mb-5 mt-5 text-lg">Please log in</h1>
+            <form id="login" class="flex flex-col w-4/5 items-center">
+                <label for="email" class="text-gray-100">Email: </label><input name="email" id="email" class="w-4/5 rounded px-2 py-1 outline-none mb-8">
+                <label for="password" class="text-gray-100">Password: </label><input type="password" name="password" id="password" class="w-4/5 rounded px-2 py-1 outline-none">
+                <button type="submit" class="bg-green-700 saturate-50 w-3/5 py-2 px-6 mt-5 text-gray-100 text-md mb-8 hover:bg-green-600 hover:scale-105 duration-150 text-center">Log in</button>
+                <p id="output" class="text-gray-100 opacity-0 cursor-default duration-1000 text-md">Please enter email and password</p>
+                <a href="register.html" class="bg-blue-900 saturate-50 w-3/5 py-2 px-6 mb-5 text-gray-100 text-md mt-4 hover:bg-blue-800 hover:scale-105 duration-150 text-center">Register</a>
+            </form>
+            
+
+        </div>
+    </main>
+
+</section>
+
+</body>
+</html>

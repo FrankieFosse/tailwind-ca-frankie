@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Social Media App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d753c6feaf.js" crossorigin="anonymous"></script>
+    <script type="module" src="../js/register.js"></script>
+    <script type="module" src="../../js/loading.js"></script>
+</head>
+<body class="bg-gray-900 h-screen flex flex-col bg-no-repeat bg-cover">
+
+    <video autoplay muted loop id="myVideo" class="fixed h-screen w-screen object-cover opacity-0">
+        <source src="../../images/backdrop.mp4" type="video/mp4">
+    </video>
+
+    <section id="backdrop" class="bg-gray-900 bg-opacity-75 backdrop-filter backdrop-blur-sm">
+
+    <section id="loader" class="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-90 backdrop-filter backdrop-blur-lg z-10 duration-1000">
+        <div class="fixed content-none z-30 w-20 h-20 border-solid border-gray-100 border-8 border-t-green-600 rounded-full animate-spin"></div>
+        </section>
+
+
+    <main class="flex flex-col justify-center items-center h-screen text-center">
+        <div class="bg-gray-800 h-max md:h-4/5 py-10 w-4/5 lg:w-2/5 flex flex-col justify-center items-center border-solid border-gray-700 border-4 xl:text-md md:text-sm text-xs">
+            <h1 class="text-gray-100 mb-5 hidden md:mb-0">Please fill out the form below to register a new profile</h1>
+            <form id="register" class="flex flex-col w-4/5 items-center">
+                <label for="name" class="text-gray-100">Username: </label><input name="name" id="name" class="w-4/5 rounded px-2 py-1 outline-none mb-8">
+                <label for="email" class="text-gray-100">Email: </label><div class="text-center bg-gray-300 w-4/5 rounded px-2 py-1 mb-8"><input class="outline-none rounded w-full" name="email" id="email"><span class="ml-2" id="mailAddon">@stud.noroff.no</span></div>
+                <label for="password" class="text-gray-100">Password: </label><input type="password" name="password" id="password" class="w-4/5 rounded px-2 py-1 outline-none">
+                <button type="submit" class="bg-green-700 saturate-50 w-3/5 py-2 px-6 mt-5 md:mt-2 text-gray-100 mb-8 md:mb-0 hover:bg-green-600 hover:scale-105 duration-150 text-center">Register</button>
+                <p id="output" class="text-gray-100 cursor-default opacity-0 duration-1000 text-lg">Value</p>
+                <a href="index.html" class="bg-red-700 saturate-50 w-3/5 py-2 px-6 mt-5 text-gray-100 xl:mb-8 hover:bg-red-500 hover:scale-105 duration-150 text-center">Cancel</a>
+            </form>
+            
+
+        </div>
+    </main>
+
+</section>
+
+</body>
+</html>
