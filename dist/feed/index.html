@@ -67,17 +67,15 @@
 
     <section id="newPostOverlay" class="fixed top-0 w-full h-full justify-items-center bg-gray-900 bg-opacity-90 hidden backdrop-filter backdrop-blur-sm">
     <div class="flex flex-col items-center justify-center w-full md:w-3/5 xl:w-2/5 h-screen">
-        <div class="bg-gray-600 w-4/5 flex flex-row justify-end pb-2">
+        <div class="bg-gray-600 w-4/5 flex flex-row justify-end pb-2 mt-24">
             <i id="cancelCreate2" class="fa-solid fa-x mr-5 mt-2 text-sm cursor-pointer hover:bg-gray-400 bg-gray-500 text-gray-100 px-2 py-1 rounded-full"></i>
         </div>
-        <form id="create" class="bg-gray-600 flex flex-col w-4/5 p-10">
-            <h1 class="text-gray-100 text-center">Please fill in the fields below to create a new post</h1>
+        <form id="create" class="bg-gray-600 flex flex-col h-3/5 w-4/5 px-10">
             <input type="text" id="title" name="title" placeholder="Title (required)" class="my-2 px-2 py-1 rounded">
             <textarea placeholder="Body (required)" id="body" class="my-2 px-2 py-1 rounded h-36"></textarea>
-            <input type="text" id="tags" name="tags" placeholder="Tags" class="my-2 px-2 py-1 rounded">
             <input type="text" id="mediaURL" name="mediaURL" placeholder="Media-URL (required)" class="my-2 px-2 py-1 rounded">
             <input type="text" id="mediaALT" name="mediaALT" placeholder="Media-ALT (required)" class="mt-2 px-2 py-1 rounded">
-            <div id="postStatus" class="text-gray-100 text-center mt-5"></div>
+            <div id="postStatus" class="text-gray-100 text-center text-sm pt-5"></div>
         </form>
         <div class="flex flex-row bg-gray-600 w-4/5 py-5 justify-center">
 
