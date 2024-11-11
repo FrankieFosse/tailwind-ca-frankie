@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
     <title>Profile - Social Media App</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/dist/styles.css">
     <script src="https://kit.fontawesome.com/d753c6feaf.js" crossorigin="anonymous"></script>
     <script type="module" src="../../js/menu.js"></script>
     <script type="module" src="script.js"></script>
@@ -14,9 +13,9 @@
     <script type="module" src="../../js/logout.js"></script>
     <script type="module" src="../../js/loading.js"></script>
 </head>
-<body class="bg-gray-900 h-screen flex flex-col font-body text-base">
+<body class="bg-gray-900 h-screen flex flex-col text-base">
 
-    <video autoplay muted loop id="myVideo" class="fixed h-screen w-screen object-cover brightness-0 grayscale">
+    <video autoplay muted loop id="myVideo" class="fixed h-screen w-screen object-cover opacity-0">
         <source src="../../images/backdrop.mp4" type="video/mp4">
     </video>
 
@@ -48,7 +47,7 @@
     <div id="followersOverlay" class="bg-gray-900 bg-opacity-90 backdrop-filter backdrop-blur-sm fixed justify-items-center w-full h-full top-16 hidden">
         <div class="flex flex-row justify-around items-center bg-gray-800 lg:w-2/5 w-4/5 mt-36 py-4">
         <h1 class="text-gray-100">Followers</h1>
-        <i id="closeFollowersOverlay" class="fa-solid fa-x mr-5 mt-2 text-sm cursor-pointer hover:bg-gray-400 bg-gray-500 text-gray-100 px-2 py-1 rounded-full"></i>
+        <i id="closeFollowersOverlay" class="fa-solid fa-x mr-5 mt-2 text-sm cursor-pointer hover:bg-gray-400 bg-gray-500 text-gray-100 px-1.5 py-1 rounded-full"></i>
         </div>
     <section id="followersList" class="bg-gray-800 text-center py-5 lg:w-2/5 w-4/5 text-gray-100"></section>
     </div>

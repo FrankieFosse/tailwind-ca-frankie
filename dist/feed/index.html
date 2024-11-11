@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
     <title>Home - Social Media App</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/dist/styles.css">
     <script src="https://kit.fontawesome.com/d753c6feaf.js" crossorigin="anonymous"></script>
     <script type="module" src="script.js"></script>
     <script type="module" src="utils.js"></script>
@@ -18,7 +17,7 @@
 </head>
 <body class="bg-gray-900 h-screen flex flex-col bg-no-repeat bg-cover">
 
-    <video autoplay muted loop id="myVideo" class="fixed h-screen w-screen object-cover brightness-0 grayscale">
+    <video autoplay muted loop id="myVideo" class="fixed h-screen w-screen object-cover opacity-0">
         <source src="../../images/backdrop.mp4" type="video/mp4">
     </video>
 
@@ -54,7 +53,7 @@
     <section class="bg-gray-900 flex flex-row justify-around items-center py-5">
     <div>
         <label for="type" class="text-gray-100 mr-2">Sort by</label>
-        <select id="type" name="type" class="bg-gray-700 text-gray-100">
+        <select id="type" name="type" class="bg-gray-700 text-gray-100 outline-none">
             <option>All</option>
             <option value="latest">Latest</option>
             <option value="title">Title A-Z</option>

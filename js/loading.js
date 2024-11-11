@@ -5,8 +5,7 @@ const loadFunction = async () => {
         loader.classList.add("hidden");
     });
     setTimeout(() => {
-        myVideo.classList.add("brightness-100");
-        myVideo.classList.remove("grayscale");
+        myVideo.style.opacity = "100";
     }, 500);
 }
 
