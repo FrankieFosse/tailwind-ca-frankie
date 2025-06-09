@@ -28,6 +28,33 @@ async function fetchPosts() {
         const queryString = document.getElementById("searchField");
         queryString.addEventListener("input", filterPosts);
 
+        const sortSelect = document.getElementById("type");
+sortSelect.addEventListener("change", sortPosts);
+
+function sortPosts() {
+    const sortValue = sortSelect.value;
+    let sorted = [...collection]; // Clone collection to avoid mutating the original
+
+    if (sortValue === "latest") {
+        sorted.sort((a, b) => new Date(b.created) - new Date(a.created));
+    } else if (sortValue === "title") {
+        sorted.sort((a, b) => a.title.localeCompare(b.title));
+    } else if (sortValue === "profile") {
+        sorted.sort((a, b) => a.author.name.localeCompare(b.author.name));
+    }
+
+    // Optionally apply filter as well if search is active
+    const filterQuery = queryString.value;
+    if (filterQuery) {
+        sorted = sorted.filter((item) =>
+            item.title.toUpperCase().includes(filterQuery.toUpperCase())
+        );
+    }
+
+    listData(sorted.slice(0, 12), out);
+}
+
+
     function filterPosts() {
     const filterQuery = queryString.value;
 
