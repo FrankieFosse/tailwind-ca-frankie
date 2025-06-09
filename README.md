@@ -41,6 +41,6 @@ Open **http://127.0.0.1:5500/dist/**
 
 ## Contact
 
-[My Github](https://github.com/FrankieFosse))
+[My Github](https://github.com/FrankieFosse)
 
 [My LinkedIn](https://www.linkedin.com/in/frank-kristian-fosse-a432b3180/)
